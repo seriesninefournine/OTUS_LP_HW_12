@@ -22,7 +22,6 @@ do
     if [ $(ps -x | grep -E "bzip2" | wc -l) -eq 1 ]; then
         kill -15 $(pidof dd)
         rm /tmp/randomfile
-        k=7
         exit
     fi
 done
