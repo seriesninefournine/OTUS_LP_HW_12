@@ -16,8 +16,7 @@ do
 done
 
 #Ждем завершения работа bzip2 и завершаем скрипт
-k=2
-while [[ $k -lt 5 ]]
+while [[ 1 ]]
 do
     if [ $(ps -x | grep -E "bzip2" | wc -l) -eq 1 ]; then
         kill -15 $(pidof dd)
